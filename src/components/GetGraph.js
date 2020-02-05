@@ -13,7 +13,8 @@ class UploadImage extends React.Component {
   getRBCCount = async e => {
     this.setState({image:null, loading: true });
     e.preventDefault();
-    const fetchResponse = await fetch('http://127.0.0.1:5000/getrbc');
+    // const fetchResponse = await fetch('http://127.0.0.1:5000/getrbc');
+    const fetchResponse = await fetch('https://lab-report-backend.herokuapp.com/getrbc');
     const res = await fetchResponse.json();
     // console.log( res)
     this.setState({image: res['image'], loading: false})
@@ -22,7 +23,7 @@ class UploadImage extends React.Component {
   getMonocytes = async e => {
     this.setState({image:null, loading: true });
     e.preventDefault();
-    const fetchResponse = await fetch('http://127.0.0.1:5000/getmonocytes');
+    const fetchResponse = await fetch('https://lab-report-backend.herokuapp.com/getmonocytes');
     const res = await fetchResponse.json();
     // console.log( res)
     this.setState({image: res['image'], loading: false})
@@ -31,7 +32,7 @@ class UploadImage extends React.Component {
   getLymphocytes = async e => {
     this.setState({image:null, loading: true });
     e.preventDefault();
-    const fetchResponse = await fetch('http://127.0.0.1:5000/getlymphocytes');
+    const fetchResponse = await fetch('https://lab-report-backend.herokuapp.com/getlymphocytes');
     const res = await fetchResponse.json();
     // console.log( res)
     this.setState({image: res['image'], loading: false})
@@ -40,9 +41,7 @@ class UploadImage extends React.Component {
   clearData = async e => {
     this.setState({image:null});
     e.preventDefault();
-    const fetchResponse = await fetch('http://127.0.0.1:5000/clear');
-    // const res = await fetchResponse.json();
-    // console.log( res)
+    const fetchResponse = await fetch('https://lab-report-backend.herokuapp.com/clear');
   }
 
   render() {

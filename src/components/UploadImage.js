@@ -15,7 +15,7 @@ class UploadImage extends React.Component {
     e.preventDefault();
     const formData = new FormData();
     formData.append('file',this.state.file);
-    const fetchResponse = await fetch('http://127.0.0.1:5000/getdigital',{
+    const fetchResponse = await fetch('https://lab-report-backend.herokuapp.com/getdigital',{
     	method: 'POST',
     	body: formData
     });
