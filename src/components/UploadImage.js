@@ -33,7 +33,7 @@ class UploadImage extends React.Component {
 
     		<form onSubmit={this.onFormSubmit} className="card shadow trans2">
 	        
-          <label htmlFor="files" className="btn btn-block text-center trans">Select File</label>
+          <label htmlFor="files" className="btn btn-block text-center trans">Select File (Upto 500 KB)</label>
           Selected File: {this.state.file && this.state.file.name}
 	        <input id="files"  type="file" onChange={this.onChange} style={{visibility:'hidden'}} />
 	        <button className="btn btn-block trans" type="submit">Get</button>
