@@ -5,7 +5,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-
       <h1 className="large text-center m">Lab Report Digitization</h1>
       <UploadImage />
       <GetGraph />

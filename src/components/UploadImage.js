@@ -46,10 +46,7 @@ class UploadImage extends React.Component {
                 
               </div>
               )
-            
           }
-          
-          
           </div>
           
         </form>

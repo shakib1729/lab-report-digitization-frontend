@@ -2,7 +2,7 @@ import React from 'react'
 import Loader from './Loader';
 import ShowImage from './ShowImage';
 
-class UploadImage extends React.Component {
+class GetGraph extends React.Component {
 
   state = {
   	image: null,  
@@ -13,10 +13,8 @@ class UploadImage extends React.Component {
   getRBCCount = async e => {
     this.setState({image:null, loading: true });
     e.preventDefault();
-    // const fetchResponse = await fetch('http://127.0.0.1:5000/getrbc');
     const fetchResponse = await fetch('https://lab-report-backend.herokuapp.com/getrbc');
     const res = await fetchResponse.json();
-    // console.log( res)
     this.setState({image: res['image'], loading: false})
   }
 
@@ -25,7 +23,6 @@ class UploadImage extends React.Component {
     e.preventDefault();
     const fetchResponse = await fetch('https://lab-report-backend.herokuapp.com/getmonocytes');
     const res = await fetchResponse.json();
-    // console.log( res)
     this.setState({image: res['image'], loading: false})
   }
 
@@ -34,7 +31,6 @@ class UploadImage extends React.Component {
     e.preventDefault();
     const fetchResponse = await fetch('https://lab-report-backend.herokuapp.com/getlymphocytes');
     const res = await fetchResponse.json();
-    // console.log( res)
     this.setState({image: res['image'], loading: false})
   }
 
@@ -63,10 +59,7 @@ class UploadImage extends React.Component {
                 
               </div>
               )
-            
           }
-          
-          
           </div>
           
         </form>
@@ -78,4 +71,4 @@ class UploadImage extends React.Component {
 
 
 
-export default UploadImage
+export default GetGraph
