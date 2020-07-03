@@ -5,7 +5,10 @@ This repository contains the frontend part of the web application implemented us
 Backend using Flask: https://github.com/shakib1729/lab-report-digitization-backend<br/>
 Deployed on Heroku: https://lab-report.herokuapp.com/
 
-Video Demo: https://youtu.be/KeDUEq5m3ns
+Video Demo 1 (image loaded in grayscale mode): https://youtu.be/U0FIQzw1BBs
+Video Demo 2 (image loaded in default mode): https://youtu.be/KeDUEq5m3ns
+
+Note: By default, some values of the medical components are stored initially just to see some example trend before uploading any lab report, we can clear them from database if needed
 
 ## About the project.
 The goal of this project is to process the images of pathological lab reports to get the values of different medical components, store the data and plot the trend of different medical components on the basis of different lab reports provided.
