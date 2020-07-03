@@ -11,7 +11,8 @@ Video Demo 2 (image loaded in default mode): https://youtu.be/KeDUEq5m3ns <br/>
 Note: By default, some values of the medical components are stored initially just to see some example trend before uploading any lab report, we can clear them from database if needed. <br/>
 
 ## About the project.
-The goal of this project is to process the images of pathological lab reports to get the values of different medical components, store the data and plot the trend of different medical components on the basis of different lab reports provided.
+The goal of this project is to process the images of pathological lab reports to get the values of different medical components, store the data and plot the trend of different medical components on the basis of different lab reports provided.<br/>
+This project was built as part of the internal hackathon for SIH 2020
 
 ## Main Libraries/Frameworks used:
 1) PyTesseract - A wrapper for Google's Tesseract-OCR Engine. It is an OCR tool to recognize and read the text present in images.
