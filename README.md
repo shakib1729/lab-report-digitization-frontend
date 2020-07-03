@@ -19,10 +19,9 @@ The goal of this project is to process the images of pathological lab reports to
 6) Flask_sqlalchemy - Flask-SQLAlchemy is an extension for Flask that adds support for SQLAlchemy in the application. SQLAlchemy is a library that facilitates the communication between Python programs and databases. 
 
 #### &nbsp; React - To build the front-end part of the web application
-<br/>
+#### Database:
+SQLite - SQLite is a software library that provides a relational database management system. It provides a lightweight disk-based database that doesn’t require a separate server process.<br/>
 
-### Database:
-SQLite - SQLite is a software library that provides a relational database management system. It provides a lightweight disk-based database that doesn’t require a separate server process.
 
 ### To set up locally:
 1) Clone
