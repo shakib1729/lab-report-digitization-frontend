@@ -6,13 +6,13 @@ const Features = ({user}) => {
 			user && (
 					<div className="all-center ">
 						{Object.keys(user).map(x => (
-						<h2 key = {x}> {x +': '+ user[x]}</h2>
-						)
-					)}
+							<h2 key = {x}> {x +': '+ user[x]}</h2>
+							)
+						)}
 				   </div>
 				)
 			
-		)
+			)
 	
 }
 
