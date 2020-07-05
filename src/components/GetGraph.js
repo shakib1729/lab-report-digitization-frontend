@@ -6,7 +6,7 @@ class GetGraph extends React.Component {
 
   state = {
   	image: null,  
-    loading: false
+    	loading: false
   }
 
 
@@ -46,29 +46,24 @@ class GetGraph extends React.Component {
     	<div className="container">
 
     		<form className="card shadow trans2 ">
-	        <button className="btn trans" onClick = {this.getRBCCount}>Get Trend of RBC Count</button>
-          <button className="btn trans" onClick = {this.getMonocytes}>Get Trend of Monocytes</button>
-	        <button className="btn trans" onClick = {this.getLymphocytes}>Get Trend of Lymphocytes</button>
-          <button className="btn trans" onClick = {this.clearData}>Clear Stored Data</button>
-	        <div className="container p-3 ">
-          {this.state.loading ? 
-            <Loader />
-            :(
-              <div>
-                <ShowImage image = {this.state.image} />
-                
-              </div>
-              )
-          }
-          </div>
-          
-        </form>
-	     
+	        	<button className="btn trans" onClick = {this.getRBCCount}>Get Trend of RBC Count</button>
+          		<button className="btn trans" onClick = {this.getMonocytes}>Get Trend of Monocytes</button>
+	        	<button className="btn trans" onClick = {this.getLymphocytes}>Get Trend of Lymphocytes</button>
+          		<button className="btn trans" onClick = {this.clearData}>Clear Stored Data</button>
+	        	<div className="container p-3 ">
+          			{this.state.loading ? 
+            				<Loader />
+            				:(
+              				<div>
+                				<ShowImage image = {this.state.image} />
+              				</div>
+              				)
+          			}
+          		</div>
+        	</form>
     	</div>
-   )
+   	)
   }
 }
 
-
-
-export default GetGraph
+export default GetGraph;
