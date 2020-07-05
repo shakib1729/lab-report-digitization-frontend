@@ -7,7 +7,7 @@ class UploadImage extends React.Component {
   state = {
   	file: null, // The current file which is uploaded
   	user: null,  
-    loading: false
+    	loading: false
   }
 
   onFormSubmit = async e => {
@@ -27,30 +27,24 @@ class UploadImage extends React.Component {
   onChange = e => this.setState({file:e.target.files[0], user: null});  
 
   render() {
-
     return (
     	<div className="container">
-
     		<form onSubmit={this.onFormSubmit} className="card shadow trans2">
-	        
-          <label htmlFor="files" className="btn btn-block text-center trans">Select File (Upto 500 KB)</label>
-          Selected File: {this.state.file && this.state.file.name}
-	        <input id="files"  type="file" onChange={this.onChange} style={{visibility:'hidden'}} />
-	        <button className="btn btn-block trans" type="submit">Get</button>
-	        <div className="container p-3 ">
-          {this.state.loading ? 
-            <Loader />
-            :(
-              <div>
-                <Features user = {this.state.user} />
-                
-              </div>
-              )
-          }
-          </div>
-          
-        </form>
-	     
+          		<label htmlFor="files" className="btn btn-block text-center trans">Select File (Upto 500 KB)</label>
+          			Selected File: {this.state.file && this.state.file.name}
+	        	<input id="files"  type="file" onChange={this.onChange} style={{visibility:'hidden'}} />
+	        	<button className="btn btn-block trans" type="submit">Get</button>
+	        	<div className="container p-3 ">
+          			{this.state.loading ? 
+            				<Loader />
+            				:(
+              				<div>
+                				<Features user = {this.state.user} />
+              				</div>
+              				)
+          			}
+          		</div>
+        	</form>  
     	</div>
    )
   }
