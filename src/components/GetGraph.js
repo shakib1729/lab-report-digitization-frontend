@@ -44,7 +44,6 @@ class GetGraph extends React.Component {
 
     return (
     	<div className="container">
-
     		<form className="card shadow trans2 ">
 	        	<button className="btn trans" onClick = {this.getRBCCount}>Get Trend of RBC Count</button>
           		<button className="btn trans" onClick = {this.getMonocytes}>Get Trend of Monocytes</button>
