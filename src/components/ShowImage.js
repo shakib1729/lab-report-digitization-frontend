@@ -5,8 +5,7 @@ const ShowImage = ({image}) => {
 		return (
 			image && (
 					<img src={image_src} alt=""/>
-				)
-		)
-	
+				 )
+			)
 }
 export default ShowImage;
